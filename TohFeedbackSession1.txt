@@ -1,0 +1,44 @@
+Code Practice chat
+
+- OOP - Object Oriented
+    - SOLID
+    - DRY
+    - can easily Unit Test 
+    - avoid hard coding
+        - string of parameters
+        - numbers of configurations
+    - Other future concepts
+        - inheritance
+        - interface
+        - overload
+        - override
+
+- Self explanatory code
+    - split logic into its own functions/methods
+    - keep functions short and easy to understand by others
+
+- Typical flow
+    - Get the input
+    - Shape your data
+    - return output
+
+> Project folder
+> Test project folder
+	- import your code, class, service
+	- build a mock data
+	- run your service/code
+	- match the expectation — Assert()
+
+Example Unit Test
+
+Test case - Happy Path
+	service = new DeptMeasurement( [1,2,4,6])
+	depth = service.CountDeptIncrease
+
+	Assert(depth, 5).should be true
+
+Test case - Bad Path
+	service = new DeptMeasurement( [9,5,4,1])
+	depth = service.CountDeptIncrease
+
+	Assert(depth, 5).should be false
